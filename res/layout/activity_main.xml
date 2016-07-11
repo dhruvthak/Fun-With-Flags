@@ -1,0 +1,84 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.quiz.funwithflag.MainActivity"
+    android:orientation="vertical" 
+    android:background="@color/background_color">
+
+    <TextView
+        android:id="@+id/titletenq"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ten_questions_flag_quiz"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/text_size"
+        android:gravity="center" />
+    <TextView
+        android:id="@+id/queno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView" 
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/text_size"
+        android:gravity="center"
+        />
+    <ImageView
+        android:adjustViewBounds="false"
+        android:id="@+id/flagImageView"
+        android:layout_width="@dimen/flag_width"
+        android:layout_height="@dimen/flag_height"
+        android:src="@drawable/ic_launcher" 
+        android:layout_gravity="center"
+        />
+    <TextView
+        android:id="@+id/guessCountryTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/text_size"        
+        android:text="@string/guess_the_country" />
+    <TableLayout 
+        android:id="@+id/buttonTableLayout"
+        android:layout_height="288dp"
+        android:layout_width="match_parent"
+        android:stretchColumns="0,1,2"
+        android:layout_weight="1">
+        <TableRow 
+            android:id="@+id/TableRow0"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal">
+            
+        </TableRow>
+        <TableRow 
+            android:id="@+id/TableRow1"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal">
+            
+        </TableRow>
+        <TableRow 
+            android:id="@+id/TableRow2"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal">
+            
+        </TableRow>
+    </TableLayout>
+   <TextView
+        android:id="@+id/answerTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="@dimen/answer_size"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:gravity="center"
+         /> 
+</LinearLayout>
